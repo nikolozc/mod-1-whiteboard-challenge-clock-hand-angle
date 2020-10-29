@@ -1,4 +1,5 @@
 describe "#clock_angle(time)" do
+
   it 'returns the correct angle between the clock hands representing 9:00' do
     expect(clock_angle("9:00")).to eq(270)
   end
@@ -21,5 +22,8 @@ describe "#clock_angle(time)" do
 
   it 'returns the correct angle between the clock hands representing 8:30' do
     expect(clock_angle("8:30")).to eq(75)
+  end
+  it 'returns the correct angle between the clock hands representing 1:06' do
+    expect(clock_angle("1:06")).to eq(357)
   end
 end
